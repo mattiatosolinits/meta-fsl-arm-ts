@@ -1,0 +1,25 @@
+From fa1203d8d16437915267a29fcb13f232beb4e9d1 Mon Sep 17 00:00:00 2001
+From: Mattia <m.tosolini@techsigno.com>
+Date: Fri, 24 Feb 2017 16:47:43 +0100
+Subject: [PATCH] dts customized
+
+---
+ arch/arm/boot/dts/imx6ul-14x14-evk.dts | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/arch/arm/boot/dts/imx6ul-14x14-evk.dts b/arch/arm/boot/dts/imx6ul-14x14-evk.dts
+index ddec415..60bb3a1 100644
+--- a/arch/arm/boot/dts/imx6ul-14x14-evk.dts
++++ b/arch/arm/boot/dts/imx6ul-14x14-evk.dts
+@@ -682,7 +682,7 @@
+ 	pinctrl-0 = <&pinctrl_usdhc1>;
+ 	pinctrl-1 = <&pinctrl_usdhc1_100mhz>;
+ 	pinctrl-2 = <&pinctrl_usdhc1_200mhz>;
+-	cd-gpios = <&gpio1 19 GPIO_ACTIVE_LOW>;
++	//cd-gpios = <&gpio1 19 GPIO_ACTIVE_LOW>;
+ 	keep-power-in-suspend;
+ 	enable-sdio-wakeup;
+ 	vmmc-supply = <&reg_sd1_vmmc>;
+-- 
+2.7.4
+
